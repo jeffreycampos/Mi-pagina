@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guns N' Roses - Página Oficial</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #a80e0e;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: url(gb.jpg) no-repeat center center;
+            background-size: cover;
+            color: rgb(230, 11, 11);
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 2;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .section-title {
+            margin-bottom: 40px;
+            position: relative;
+            text-align: center;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #e00b0b;
+            margin: 10px auto;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .integrants img {
+            border-radius: 50%;
+            max-width: 180px;
+        }
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #d40a0a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 50;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Guns N' Roses</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#integrants">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biography">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#concerts">Conciertos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#discs">Discos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <header class="hero">
+        <div>
+            <h1>Guns N' Roses</h1>
+            <p class="lead">La leyenda del Rock</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <!-- Sección de Integrantes -->
+        <section id="integrants" class="mb-6">
+            <h2 class="section-title">Integrantes</h2>
+            <div class="row integrants">
+                <div class="col-md-3 text-center">
+                    <img src="Axel-Rose.jpg" alt="Axel Rose">
+                    <h5>Axel Rose</h5>
+                    <p>Voz principal</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="SaulHudson.jpg" alt="Slash">
+                    <h5>Slash</h5>
+                    <p>Guitarra principal</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="Duff_mckagan.jpg" alt="Duff McKagan">
+                    <h5>Duff McKagan</h5>
+                    <p>Bajo</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="stevenadler.jpeg" alt="Steven Adler">
+                    <h5>Steven Adler</h5>
+                    <p>Batería</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Biografía -->
+        <section id="biography" class="mb-5">
+            <h2 class="section-title">Biografía</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Logoguns.jpeg" class="img-fluid" alt="Biografía">
+                </div>
+                <div class="col-md-6">
+                    <p>Guns N' Roses es una banda de rock estadounidense formada en Los Ángeles en 1985. La formación original consistió en Axl Rose (voz), Slash (guitarra principal), Duff McKagan (bajo), Izzy Stradlin (guitarra rítmica) y Steven Adler (batería). Su álbum debut, "Appetite for Destruction", se lanzó en 1987 y se convirtió en uno de los álbumes más vendidos de todos los tiempos. La banda es conocida por sus éxitos como "Sweet Child O' Mine", "Paradise City" y "November Rain".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Conciertos -->
+        <section id="concerts" class="mb-5">
+            <h2 class="section-title">Conciertos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ConcientoMX.jpg" class="card-img-top" alt="Concierto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Concierto en Ciudad de México</h5>
+                            <p class="card-text">Fecha: 15 de marzo de 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="gunsBA.jpg" class="card-img-top" alt="Concierto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Concierto en Buenos Aires</h5>
+                            <p class="card-text">Fecha: 20 de marzo de 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ConciertoS.jpg" class="card-img-top" alt="Concierto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Concierto en Santiago</h5>
+                            <p class="card-text">Fecha: 25 de marzo de 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Discos -->
+        <section id="discs" class="mb-5">
+            <h2 class="section-title">Discos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="destruc.jpg" class="card-img-top" alt="Appetite for Destruction">
+                        <div class="card-body">
+                            <h5 class="card-title">Appetite for Destruction</h5>
+                            <p class="card-text">Lanzado: 1987</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="GNR_GNRLies.jpg" class="card-img-top" alt="G N' R Lies">
+                        <div class="card-body">
+                            <h5 class="card-title">G N' R Lies</h5>
+                            <p class="card-text">Lanzado: 1988</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="GMC.jpeg" class="card-img-top" alt="Use Your Illusion">
+                        <div class="card-body">
+                            <h5 class="card-title">Use Your Illusion I & II</h5>
+                            <p class="card-text">Lanzado: 1991</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Guns N' Roses Fan Site. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al JavaScript de Bootstrap y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

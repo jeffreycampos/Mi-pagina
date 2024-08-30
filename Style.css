@@ -1,0 +1,69 @@
+         *{
+
+            font-family: 'Arial', sans-serif;
+            color: #a80e0e;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: url(gb.jpg) no-repeat center center;
+            background-size: cover;
+            color: rgb(230, 11, 11);
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 2;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .section-title {
+            margin-bottom: 40px;
+            position: relative;
+            text-align: center;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #d31010;
+            margin: 10px auto;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .integrants img {
+            border-radius: 50%;
+            max-width: 180px;
+        }
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #d40a0a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 50;
+        }
+   
